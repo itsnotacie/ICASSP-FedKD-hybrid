@@ -1,0 +1,23 @@
+{
+    "N_parties": 10,
+    "N_samples_per_class": 900,
+    "N_alignment": 9000,
+    "private_classes": [0,1],
+    "public_classes": [0, 1],
+    "is_show": False,
+    "N_rounds": 50,
+    "N_logits_matching_round": 1,
+    "N_private_training_round": 30,
+    "private_training_batchsize" : 64,
+    "asynchronousRates": [0.6,0.8,1],
+    "logits_matching_batchsize": 64,
+    "ConvConsistFedMD_dir": "./dataset/ConvConsistFedMD-lettersno没用.mat",
+    "model_saved_dir": "./pretrained_from_ICCAD/",
+    "result_save_dir": "./ResultOutput/",
+    "dataSet_reduct_para" : 2,
+    "configuration_description": "FedMD-CC算法,10个节点60%，80%异步率和100%同步率。每个节点（包括FABindus节点）私有数据集占原总数据量（ICCAD的18000）的5%（即900个数据点）。公共数据集占原总数据量（ICCAD的18000）的50%（即9000个数据点）。dataSetReductPara-2参数为2表示训练集一分为二。训练50轮次（round-50）。ICCAD和FABindus的训练集取第一部分。ICCAD公共数据集取ICCAD总训练集的第二部分。两个数据集对应的模型分别是：CNN_16_16_16_32_32_FC320_240_2_FAB1_acc0_68 和CNN_16_16_32_32_32_FC240_2_iccad1_acc0_62"
+
+}
+
+
+
