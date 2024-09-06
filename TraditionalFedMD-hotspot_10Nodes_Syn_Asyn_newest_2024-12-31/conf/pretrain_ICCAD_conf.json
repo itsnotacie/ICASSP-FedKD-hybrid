@@ -1,0 +1,24 @@
+{
+    "n_classes": 2,
+    "data_type": "ICCAD",
+    "models": [
+               {"model_type": "3_layer_CNN", "params": {"n1": 16, "n2": 16, "n3": 32,"n4": 32, "dropout_rate": 0.3}},
+               {"model_type": "3_layer_CNN", "params": {"n1": 16, "n2": 16, "n3": 32,"n4": 32, "dropout_rate": 0.3}},
+               {"model_type": "3_layer_CNN", "params": {"n1": 16, "n2": 16, "n3": 32,"n4": 32, "dropout_rate": 0.3}},
+               {"model_type": "3_layer_CNN", "params": {"n1": 16, "n2": 16, "n3": 32,"n4": 32, "dropout_rate": 0.3}},
+               {"model_type": "3_layer_CNN", "params": {"n1": 16, "n2": 16, "n3": 32,"n4": 32, "dropout_rate": 0.3}},
+               {"model_type": "3_layer_CNN", "params": {"n1": 16, "n2": 16, "n3": 32,"n4": 32, "dropout_rate": 0.3}},
+               {"model_type": "3_layer_CNN", "params": {"n1": 16, "n2": 16, "n3": 32,"n4": 32, "dropout_rate": 0.3}},
+               {"model_type": "3_layer_CNN", "params": {"n1": 16, "n2": 16, "n3": 32,"n4": 32, "dropout_rate": 0.3}},
+               {"model_type": "3_layer_CNN", "params": {"n1": 16, "n2": 16, "n3": 32,"n4": 32, "dropout_rate": 0.3}},
+               {"model_type": "3_layer_CNN", "params": {"n1": 16, "n2": 16, "n3": 32,"n4": 32, "dropout_rate": 0.3}}
+    ],
+    "train_params": {"min_delta": 0.001, "patience": 3,
+                     "batch_size": 128, "epochs": 1, "is_shuffle": True,
+                     "verbose": 1},
+    "save_directory": "./pretrained_from_ICCAD/",
+    "save_names" : [ "CNN_16_16_32_32_iccad1","CNN_16_16_32_32_iccad2","CNN_16_16_32_32_iccad3","CNN_16_16_32_32_iccad4","CNN_16_16_32_32_iccad5",
+                     "CNN_16_16_32_32_FAB1","CNN_16_16_32_32_FAB2","CNN_16_16_32_32_FAB3","CNN_16_16_32_32_FAB4","CNN_16_16_32_32_FAB5"],
+    "early_stopping" : True,
+}
+
